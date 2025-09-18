@@ -17,7 +17,7 @@ import org.springframework.kafka.support.serializer.JsonDeserializer
 import org.springframework.messaging.handler.annotation.Payload
 import org.springframework.scheduling.concurrent.ConcurrentTaskExecutor
 import ru.pachan.writer_kotlin.dto.WriterDto
-import ru.pachan.writer_kotlin.service.writer_dto_consumer.WriterDtoConsumer
+import ru.pachan.writer_kotlin.service.WriterDtoConsumer
 
 @Configuration
 class KafkaConfig {
@@ -61,7 +61,7 @@ class KafkaConfig {
     }
 
     @Bean
-    fun writerDtoConsumer(writerDtoConsumer: WriterDtoConsumer): KafkaConfig.KafkaClient {
+    fun kafkaClient(writerDtoConsumer: WriterDtoConsumer): KafkaClient {
         return KafkaClient(writerDtoConsumer)
     }
 
