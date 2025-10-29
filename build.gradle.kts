@@ -1,3 +1,5 @@
+import jdk.tools.jlink.resources.plugins
+
 val kotlinVer: String by project // 2.1.0
 val jacksonKotlinVer: String by project // 2.18.2
 val springBootStarterVer: String by project // 3.4.2
@@ -12,6 +14,7 @@ val logstashEncoderVer: String by project // 8.0
 plugins {
     kotlin("jvm") version "2.1.0"
     kotlin("plugin.spring") version "2.1.0"
+    kotlin("plugin.jpa") version "2.1.0"
     id("org.springframework.boot") version "3.4.2-SNAPSHOT"
     id("io.spring.dependency-management") version "1.1.7"
 }
