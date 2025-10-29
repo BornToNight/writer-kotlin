@@ -1,5 +1,3 @@
-import jdk.tools.jlink.resources.plugins
-
 val kotlinVer: String by project // 2.1.0
 val jacksonKotlinVer: String by project // 2.18.2
 val springBootStarterVer: String by project // 3.4.2
