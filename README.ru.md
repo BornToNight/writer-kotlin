@@ -1,19 +1,20 @@
 # Backend Приложение с топ стэком для микросервесной архитектуры
 ## Микросервис - Writer
-[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/BornToNight/writer/blob/main/README.md)
+[![en](https://img.shields.io/badge/lang-en-green.svg)](https://github.com/BornToNight/writer-kotlin/blob/main/README.md)
+[![java](https://img.shields.io/badge/java-blue.svg)](https://github.com/BornToNight/writer/blob/main/README.ru.md)
 
 Цель проекта - потренироваться с самым популярным стэком для Java/Kotlin разработчика (ИМХО).
 
 ### Микросервисы:
 - [proto-common](https://github.com/BornToNight/proto-common)
   - Базовые классы gRPC (**main** и **reader**).
-- [main](https://github.com/BornToNight/main) (:5001)
+- [main](https://github.com/BornToNight/main-kotlin) (:5001)
   - Основной сервис, front (postman) общается **ТОЛЬКО** с main. Включает в себя **docker-compose** и **k8s** конфиги.
-- [**writer**](https://github.com/BornToNight/writer) (:5002) :white_check_mark:
+- [**writer**](https://github.com/BornToNight/writer-kotlin) (:5002) :white_check_mark:
   - Микросервис для практики по работе с **Kafka**. Получает сообщения из Kafka и записывает в PostgreSQL.
-- [reader**](https://github.com/BornToNight/reader) (:5003)
+- [reader**](https://github.com/BornToNight/reader-kotlin) (:5003)
   - Микросервис для практики по работе с **gRPC**. **main** может отправить запрос в **reader**.
-- [admin](https://github.com/BornToNight/admin) (:5004)
+- [admin](https://github.com/BornToNight/admin-kotlin) (:5004)
   - Spring Admin UI для мониторинка сервисов.
 
 ![drawio2](https://github.com/user-attachments/assets/cd5bb990-c4b6-4c34-8477-1e75c0c68cf5)

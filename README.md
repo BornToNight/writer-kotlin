@@ -1,19 +1,20 @@
 # Backend Application with Top Stack for Microservices Architecture  
 ## Microservice - Writer  
-[![ru](https://img.shields.io/badge/lang-ru-green.svg)](https://github.com/BornToNight/writer/blob/main/README.ru.md)
+[![ru](https://img.shields.io/badge/lang-ru-green.svg)](https://github.com/BornToNight/writer-kotlin/blob/main/README.ru.md)
+[![java](https://img.shields.io/badge/java-blue.svg)](https://github.com/BornToNight/writer/blob/main/README.ru.md)
 
 The goal of this project is to practice with the most popular stack for Java/Kotlin developers (IMHO).
 
 ### Microservices:
 - [proto-common](https://github.com/BornToNight/proto-common)
   - Basic gRPC classes (**main** and **reader**).
-- [main](https://github.com/BornToNight/main) (:5001)
+- [main](https://github.com/BornToNight/main-kotlin) (:5001)
   - The main service, front (postman) communicates **ONLY** with main. Includes **docker-compose** and **k8s** configurations.
-- [**writer**](https://github.com/BornToNight/writer) (:5002) :white_check_mark:
+- [**writer**](https://github.com/BornToNight/writer-kotlin) (:5002) :white_check_mark:
   - Microservice for Kafka practice. Receives messages from Kafka and writes them to PostgreSQL.
-- [reader](https://github.com/BornToNight/reader) (:5003)
+- [reader](https://github.com/BornToNight/reader-kotlin) (:5003)
   - Microservice for gRPC practice. **main** can send requests to **reader**.
-- [admin](https://github.com/BornToNight/admin) (:5004)
+- [admin](https://github.com/BornToNight/admin-kotlin) (:5004)
   - Spring Admin UI for service monitoring.
 
 ![drawio2](https://github.com/user-attachments/assets/cd5bb990-c4b6-4c34-8477-1e75c0c68cf5)
